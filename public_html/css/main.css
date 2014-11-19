@@ -80,7 +80,6 @@ textarea {
 
 body {
   background: #2f3238;
-  background: #ccc;
   color: #fff;
   font-weight: 400;
   font-size: 1em;
@@ -147,7 +146,6 @@ a:hover, a:focus {
   height: auto;
   border-radius: 4px;
   background: #403E45;
-  background: #fff;
   color: #76737C;
   text-align: center;
 }
