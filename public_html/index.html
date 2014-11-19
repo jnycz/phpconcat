@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="/fonts/font-awesome-4.2.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/main.css">
+
+  <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <div class="content">
+
+    <h1>PDF Concatenator Prototype</h1>
+
+    <div id="grid" class="grid clearfix">
+      <div class="grid__item"><img src="files/thumbs/bally.png" data-pdf="bally.pdf" /></div>
+      <div class="grid__item"><img src="files/thumbs/bike.png" data-pdf="bike.pdf" /></div>
+      <div class="grid__item"><img src="files/thumbs/dam.png" data-pdf="dam.pdf" /></div>
+      <div class="grid__item"><img src="files/thumbs/sasaki.png" data-pdf="sasaki.pdf" /></div>
+      <div class="grid__item"><img src="files/thumbs/zelle.png" data-pdf="zelle.pdf" /></div>
+    </div>
+
+  </div><!-- content -->
+</div><!-- container -->
+
+<div id="drop-area" class="drop-area">
+  <div>
+    <div class="drop-area__item"></div>
+    <div class="drop-area__item"></div>
+    <div class="drop-area__item"></div>
+    <div class="drop-area__item"></div>
+    <div class="drop-area__item"></div>
+  </div>
+</div>
+<div class="drop-overlay"></div>
+
+<script src="/js/draggabilly.pkgd.min.js"></script>
+<script src="/js/dragdrop.js"></script>
+<script>
+  (function() {
+    var body = document.body,
+      dropArea = document.getElementById( 'drop-area' ),
+      droppableArr = [], dropAreaTimeout;
+
+    // initialize droppables
+    [].slice.call( document.querySelectorAll( '#drop-area .drop-area__item' )).forEach( function( el ) {
+      droppableArr.push( new Droppable( el, {
+        onDrop : function( instance, draggableEl ) {
+
+          // show checkmark inside the droppabe element
+          classie.add( instance.el, 'drop-feedback' );
+
+          clearTimeout( instance.checkmarkTimeout );
+
+          instance.checkmarkTimeout = setTimeout( function() {
+            //classie.remove( instance.el, 'drop-feedback' );
+
+          }, 800 );
+
+          console.log(instance);
+        }
+      } ) );
+    } );
+
+    // initialize draggable(s)
+    [].slice.call(document.querySelectorAll( '#grid .grid__item' )).forEach( function( el ) {
+      new Draggable( el, droppableArr, {
+        draggabilly : { containment: document.body },
+
+        onStart : function() {
+          // add class 'drag-active' to body
+          classie.add( body, 'drag-active' );
+          // clear timeout: dropAreaTimeout (toggle drop area)
+          clearTimeout( dropAreaTimeout );
+          // show dropArea
+          classie.add( dropArea, 'show' );
+        },
+        onEnd : function( wasDropped ) {
+          var afterDropFn = function() {
+            // hide dropArea
+            classie.remove( dropArea, 'show' );
+            // remove class 'drag-active' from body
+            classie.remove( body, 'drag-active' );
+
+            // HERE
+            //var item = $(el).find('img').attr('data-pdf');
+            //console.log(item);
+
+          };
+
+          if( !wasDropped ) {
+            afterDropFn();
+          }
+          else {
+            // after some time hide drop area and remove class 'drag-active' from body
+            clearTimeout( dropAreaTimeout );
+            dropAreaTimeout = setTimeout( afterDropFn, 1000 );
+          }
+        }
+      } );
+    } );
+  })();
+</script>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
