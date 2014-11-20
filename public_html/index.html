@@ -28,6 +28,10 @@
       <div class="grid__item"><img src="files/thumbs/zelle.png" data-pdf="zelle.pdf" /></div>
     </div>
 
+    <div id="controls">
+      <button>Concatenate PDFs</button>
+    </div>
+
   </div><!-- content -->
 </div><!-- container -->
 
@@ -65,7 +69,6 @@
 
           }, 800 );
 
-          console.log(instance);
         }
       } ) );
     } );
@@ -89,10 +92,12 @@
             classie.remove( dropArea, 'show' );
             // remove class 'drag-active' from body
             classie.remove( body, 'drag-active' );
-
+            // add class added
+            classie.add( el, 'added');
             // HERE
             //var item = $(el).find('img').attr('data-pdf');
             //console.log(item);
+            console.log(el);
 
           };
 
@@ -108,6 +113,7 @@
       } );
     } );
   })();
+
 </script>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

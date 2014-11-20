@@ -149,6 +149,13 @@ a:hover, a:focus {
   color: #76737C;
   text-align: center;
 }
+
+.grid__item.added {
+  background: #8c8a91;
+}
+.grid__item.added img {
+  opacity: .44;
+}
 .grid__item img {
   width: 100%;
 }
@@ -328,6 +335,29 @@ a:hover, a:focus {
   position: absolute !important;
   margin: 0;
 }
+
+
+#controls {
+  padding: 2em;
+}
+
+#controls button {
+  padding: .7em .5em .5em .5em;
+  background: #3960ff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+#controls button:hover {
+opacity: .77;
+}
+
+
+
+
+
+
+
 
 @media screen and (max-width: 50em) {
   .grid__item {
