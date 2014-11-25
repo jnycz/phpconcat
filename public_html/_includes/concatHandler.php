@@ -10,15 +10,30 @@
 require_once '../PDFMerger/PDFMerger.php';
 
 // Test for post var of pdfs to concatenate
-if(isset($_POST['pdfstring'])) {
+if(isset($_POST['pdfs'])) {
+
+  $items = json_encode($_POST['pdfs']);
+  $timestamp = time();
+  $mergedPDF = $timestamp.'.pdf';
+  $pdfDir = '/Applications/XAMPP/xamppfiles/htdocs/sites/phpconcat/public_html/files/pdf/';
+  $downloadURL = 'http://'.$_SERVER["SERVER_NAME"].'/files/merged&file='.$mergedPDF;
 
   // New Instance
   $pdf = new PDFMerger;
 
-  $pdf->addPDF('../PDFMerger/samplepdfs/one.pdf', '1, 3, 4')
-    ->addPDF('../PDFMerger/samplepdfs/two.pdf', '1-2')
-    ->addPDF('../PDFMerger/samplepdfs/three.pdf', 'all')
-    ->merge('download', '../PDFMerger/samplepdfs/merged/TEST2.pdf');
+  $pdf->addPDF($pdfDir.'bally.pdf', 'all')
+    ->addPDF($pdfDir.'bike.pdf', 'all')
+    ->addPDF($pdfDir.'dam.pdf', 'all')
+    ->merge('download', $pdfDir.$timestamp.'.pdf');
+
+  // We'll be outputting a PDF
+  header('Content-type: application/pdf');
+
+  // It will be called downloaded.pdf
+  header('Content-Disposition: attachment; filename="'.$timestamp.'.pdf"');
+
+  // The PDF source is in original.pdf
+  readfile('original.pdf');
 
 }
 
