@@ -9,31 +9,15 @@ function concatPDF( items ) {
     pdfs: items
   };
 
+  console.log(items);
+
   // Ajax request passing pdf string to php
   var options = {
     type: "POST",
     data: parameters,
     url: "/_includes/concatHandler.php",
-    dataType: "html",
-    context: document.body,
     success: function(data) {
-
-      console.log(data);
-      if (data) {
-        if (data.path) {
-          //Create an hidden iframe, with the 'src' attribute set to the created ZIP file.
-          var dlif = $('<iframe/>',{'src':data.path}).hide();
-          //Append the iFrame to the context
-          this.append(dlif);
-        } else if (data.error) {
-          alert(data.error);
-        } else {
-          alert('Something went wrong');
-        }
-      }
-    },
-    error: function(items) {
-      alert('Error');
+      window.location.href = data;
     }
   };
 
@@ -56,22 +40,16 @@ $(function() {
     });
 
     // Debug
-    console.log(selectedPDFs);
-    console.log('Num Items Added: ' + selectedPDFs.length);
+    //console.log(selectedPDFs);
+    //console.log('Num Items Added: ' + selectedPDFs.length);
 
     if(selectedPDFs.length > 0) {
       // Run concat function - download default
-      alert('RUN CONCAT!');
       concatPDF(selectedPDFs);
     } else {
       alert('You didn\'t select any pdfs to concatenate.');
     }
 
-
-
   });
 
 });
-
-//Reference
-// http://stackoverflow.com/questions/6668776/download-file-through-an-ajax-call-php

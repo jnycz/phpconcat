@@ -121,7 +121,7 @@ class PDFMerger
 			}
 			else
 			{
-				throw new exception("Error outputting PDF to '$outputmode'.");
+				//throw new exception("Error outputting PDF to '$outputmode'.");
 				return false;
 			}
 		}

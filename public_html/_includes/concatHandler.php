@@ -10,40 +10,24 @@
 require_once '../PDFMerger/PDFMerger.php';
 
 // Test for post var of pdfs to concatenate
-//if(isset($_POST['pdfs'])) {
+if(isset($_POST['pdfs'])) {
+  $items = $_POST['pdfs'];
+  foreach($items as $item) {
 
-  //$items = json_encode($_POST['pdfs']);
-  $timestamp = time();
-  $mergedPDF = $timestamp.'.pdf';
-  $pdfDir = '/Applications/XAMPP/xamppfiles/htdocs/sites/phpconcat/public_html/files/pdf/';
-  $downloadURL = 'http://'.$_SERVER["SERVER_NAME"].'/files/merged&file='.$mergedPDF;
+  }
+}
 
-  // New Instance
-  $pdf = new PDFMerger;
+//$items = json_encode($_POST['pdfs']);
+$timestamp = time();
+$mergedPDF = $timestamp.'.pdf';
+$pdfDir = '/Applications/XAMPP/xamppfiles/htdocs/sites/phpconcat/public_html/files/pdf/';
+$downloadURL = 'http://'.$_SERVER["SERVER_NAME"].'/files/merged/'.$mergedPDF;
+$downloadAbPath = '/Applications/XAMPP/xamppfiles/htdocs/sites/phpconcat/public_html/files/merged/'.$mergedPDF;
 
-  $pdf->addPDF($pdfDir.'bally.pdf', 'all')
-    ->addPDF($pdfDir.'bike.pdf', 'all')
-    ->merge('download', $timestamp.'.pdf');
+// New Instance
+$pdf = new PDFMerger;
+$pdf->addPDF($pdfDir.'bally.pdf', 'all')->addPDF($pdfDir.'bike.pdf', 'all')->merge('file', $downloadAbPath);
 
-  // We'll be outputting a PDF
-  header('Content-type: application/pdf');
+echo $downloadURL;
 
-  // It will be called downloaded.pdf
-  header('Content-Disposition: attachment; filename="'.$timestamp.'.pdf"');
-
-  // The PDF source is in original.pdf
-  readfile('original.pdf');
-
-//}
-
-//REPLACE 'file' WITH 'browser', 'download', 'string', or 'file' for output options
-//You do not need to give a file path for browser, string, or download - just the name.
-
-
-
-
-/*
- * NOTES
- * THis is working when I hit the php scripti directly.  WE need to return the url of the merged pdf
- * and display it in an iframe for the download to work.
- */
+exit();
