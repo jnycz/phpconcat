@@ -2,30 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4413f2e-8160-45b4-aa01-a45cdf460d5f" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/404.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/files/pdf/worktest.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/files/thumbs/dam.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/robots.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/tmp/DragDropInteractions/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/tmp/DragDropInteractions/bottom-slide.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/tmp/DragDropInteractions/css/bottom-area.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/tmp/DragDropInteractions/css/bottom-slide.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/tmp/DragDropInteractions/css/demo.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/tmp/DragDropInteractions/css/icons.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/tmp/DragDropInteractions/css/modal.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/tmp/DragDropInteractions/css/normalize.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/tmp/DragDropInteractions/css/page-scale.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/tmp/DragDropInteractions/css/reveal.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/tmp/DragDropInteractions/css/sidebar.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/tmp/DragDropInteractions/icons.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/tmp/DragDropInteractions/img/related/DualViewSlideshow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/tmp/DragDropInteractions/img/related/MorphingButtons.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/tmp/DragDropInteractions/js/modernizr.custom.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/tmp/DragDropInteractions/modal.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/tmp/DragDropInteractions/page-scale.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/tmp/DragDropInteractions/reveal.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/tmp/DragDropInteractions/sidebar.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public_html/index.html" afterPath="$PROJECT_DIR$/public_html/index.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/files/merged/1417634733.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/files/merged/1417634825.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/files/merged/1417634840.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/files/merged/1417635661.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/files/merged/1417635676.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/files/merged/1417635680.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/files/merged/1417635763.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/files/merged/1417635772.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/files/merged/1417635779.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/files/merged/1417635799.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/files/merged/1417635965.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/files/merged/1417636029.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/files/merged/1417636076.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/files/merged/1417636133.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/files/merged/1417636226.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/files/merged/1417636229.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/files/merged/1417636265.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/files/merged/1417636426.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/files/merged/1417636491.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/files/merged/1417636492.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/files/merged/1417636503.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/files/merged/1417636596.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/files/merged/1417636628.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/files/merged/1417636849.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/files/merged/1417636855.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/files/merged/1417636859.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/files/merged/1417637016.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/files/merged/1417637224.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/files/merged/1417712290.pdf" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="phpconcat.iws" />
@@ -83,11 +89,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public_html/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6594427" vertical-offset="996" max-vertical-offset="1965">
+            <state vertical-scroll-proportion="-26.625" vertical-offset="996" max-vertical-offset="1965">
               <caret line="109" column="56" selection-start-line="109" selection-start-column="56" selection-end-line="109" selection-end-column="56" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0154958675" vertical-offset="0" max-vertical-offset="968">
+              <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -115,6 +131,7 @@
         <option value="$PROJECT_DIR$/public_html/js/main.js" />
         <option value="$PROJECT_DIR$/public_html/_includes/concatHandler.php" />
         <option value="$PROJECT_DIR$/public_html/index.html" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -168,10 +185,6 @@
               <option name="myItemId" value="phpconcat" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public_html" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -184,36 +197,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="public_html" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="files" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="thumbs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="phpconcat" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="phpconcat" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public_html" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="files" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pdf" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -680,8 +663,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public_html/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6594427" vertical-offset="996" max-vertical-offset="1965">
+        <state vertical-scroll-proportion="-26.625" vertical-offset="996" max-vertical-offset="1965">
           <caret line="109" column="56" selection-start-line="109" selection-start-column="56" selection-end-line="109" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0154958675" vertical-offset="0" max-vertical-offset="968">
+          <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
           <folding />
         </state>
       </provider>
